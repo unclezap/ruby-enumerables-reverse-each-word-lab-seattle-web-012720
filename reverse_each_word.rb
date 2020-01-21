@@ -9,15 +9,5 @@
 #end 
 
 def reverse_each_word(string)
- new = string.reverse
- array = []
- result = []
- array = new.split
- array = array.reverse
- result = array.collect do |word|
-   word = "#{word} asdfsad"
- end
- array = array*" "
- return array
-
+  string.reverse.split.collect { |word| word }.reverse.join(" ")
 end
